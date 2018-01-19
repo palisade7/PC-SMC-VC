@@ -1,7 +1,334 @@
 body {
 	font-family: RM Pro;
+	color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'BankGothicBT-Medium';
+}
+
+h1 {
+	font-size: 70px;
+	line-height: 60px;
+}
+
+h2 { font-size: 42px; }
+h3 { font-size: 30px; }
+
+h4 {
+	font-size: 25px;
+	font-family: RM Pro;
+}
+
+p {
+    font-family: RM Pro;
+    font-weight: 300;
+}
+
+a { font-family: RM Pro; }
+
+a.btn {
+    border-radius: 8px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: auto;
+    font-size: 16px;
+    padding: 0px 28px;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    margin: 9px 0;
+    text-transform: uppercase;
+    color: #111;
+}
+
+a.btn-primary {
+	background: #EF3340;
+	color: #FFFFFF;
+}
+
+a.nav-link {
+	font-family: RM Pro;
+	font-size: 14px;
+	color: #000000;
+	letter-spacing: 1.2px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 22px 30px 22px 0px;
+}
+
+.sub-header h1.stroke {
+	font-size: 200px;
+	border: 1px solid #fff;
+	color: transparent;
+	text-align: center;
+}
+
+
+/*---- Header ----*/
+nav.bg-light { background: #fff !important;}
+
+.logo {
+	position: absolute;
+	margin-left: -95px;
+	left: 50%;
+	width: 190px;
+}
+
+.logo img {
+	width: 100%;
+	max-width: 190px;
+}
+
+/*---- .hero ----*/
+.hero {
+    margin-top: 77px;
+    background-image: url(../images/hero@2x.png);
+    padding: 200px 0;
+    background-size: cover;
+	margin-bottom: 0;
+}
+
+.hero .hero-text {
+    width: 100%;
+    max-width: 678px;
+    margin: 0 auto;
+    display: block;
+    padding: 0px 0;
+}
+
+/*---- .intro ----*/
+.intro {
+    background-image: url(../images/pattern-1.gif);
+    padding: 230px 0;
+	margin-bottom: 0;
+}
+
+.intro img {
+    max-width: 110px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+	margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 40px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    line-height: 56px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.intro p span {
+	font-weight: 600;
+}
+
+.intro a.btn-link {
+	font-family: 'BankGothicBT-Medium';
+	font-size: 30px;
+	color: #545454;
+	letter-spacing: 0.5px;
+	line-height: 63px;
+	text-align: center;
+	width: 100%;
+}
+
+.donation {
+    margin: 0px;
+    padding: 0;
+}
+
+.donation .v-grid {
+    height: 500px;
+    width: 100%;
+}
+
+.donation .one,
+.donation .two,
+.donation .three,
+.donation .four,
+.donation .five {
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    float: left;
+	position: relative;
+}
+
+.donation .one {
+	background-image: url(../images/v-grid-img-1.jpg);
+}
+.donation .two {
+	background-image: url(../images/v-grid-img-2.jpg);
+}
+.donation .three {
+	background-image: url(../images/v-grid-img-3.jpg);
+}
+.donation .four {
+	background-image: url(../images/v-grid-img-4.jpg);
+}
+.donation .five {
+	background-image: url(../images/v-grid-img-5.jpg);
+}
+
+.donation .donate-btn {
+    position: absolute;
+    height: 100%;
+    color: #fff;
+    line-height: 500px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+    border-radius: 0;
+    padding: 225px 0;
+}
+
+.donation .donate-btn:hover {
+    background: rgba(0,0,0,0.85);
+}
+
+.donation .donate-btn a {
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    margin: 0;
+    width: 180px;
+    background: transparent;
+    border: 2px solid #fff;
+    left: 50%;
+    margin-left: -90px;
+}
+
+.donation .donate-btn a:hover {
+	background: #EF3340;
+	color: #fff;
+	border: 2px solid #EF3340;
+}
+
+
+
+.third-block { width: 33.33333%;}
+.qrt-block { width: 25%;}
+.half-block { width: 50%;}
+.twothirds-block { width: 66.6666%;}
+
+/*---- Invite a Friend ----*/
+.friend {
+	margin-bottom: 0px;
+	padding: 120px 0;
+	background-image: url(../images/invitefriend.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	min-height: 580px;
+}
+
+.friend .content {
+    float: right;
+    width: 55%;
+    padding-right: 40px;
+}
+
+.friend p {
+	font-size: 28px;
+	color: #000000;
+	letter-spacing: 0.42px;
+	line-height: 40px;
+}
+
+.friend h2 {
+    line-height: 40px;
+    font-size: 48px;
+    letter-spacing: 0;
+    margin-bottom: 25px;
+}
+
+.friend p {
+    font-size: 24px;
+    color: #000000;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+
+/*---- Footer ----*/
+footer {
+	background-image: url(../images/pattern-2.gif);
+	width: 100%;
+}
+
+/*---- .subscribe ----*/
+footer .subscribe {
+    padding: 80px 0;
+    text-align: center;
+}
+
+footer .subscribe h4 {
+    font-family: RM Pro;
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: 0.42px;
+    line-height: 40px;
+    font-weight: 200;
+    margin-bottom: 38px;
+}
+
+.form-group {
+    position: relative;
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    clear: both;
+    min-height: 54px;
+}
+
+footer .subscribe form input {
+    width: 100%;
+    float: left;
+    height: 54px;
+    border-radius: 4px 30px 30px 4px;
+}
+
+footer .subscribe button {
+    background: #000000;
+    color: #FFFFFF;
+    border-radius: 0px 8px 8px 0px;
+    border: none;
+    position: absolute;
+    right: 0px;
+	letter-spacing: 0.5px;
+    padding: 15px 40px;
+    text-transform: uppercase;
+	font-weight: 600;
+}
+
+footer .bottom-bar {
+	background: #000;
+	width: 100%;
+	float: left;
+}
+
+footer .bottom-bar .nav-link {
+	display: inline;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1.29px;
+	float: left;
+}
+
+footer .bottom-bar p.copyright {
+	color: #737373;
+	font-size: 14px;
+	margin: 0;
+}
+
+footer .bottom-bar p.copyright a {
+	color: #737373;
+	text-decoration: underline;
 }
