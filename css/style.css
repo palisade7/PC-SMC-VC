@@ -179,16 +179,16 @@ nav.bg-light { background: #fff !important;}
     height: 100%;
     color: #fff;
     line-height: 500px;
-    box-sizing: border-box;
     margin: 0;
     width: 100%;
     background: rgba(0,0,0,0.85);
     border-radius: 0;
-    padding: 225px 0;
+    padding: 0 0;
+	transition: 0.2s ease all;
 }
 
 .donation .donate-btn:hover {
-    background: rgba(0,0,0,0.85);
+    background: rgba(239, 51, 64, 0.5);
 }
 
 .donation .donate-btn a {
@@ -202,12 +202,22 @@ nav.bg-light { background: #fff !important;}
     border: 2px solid #fff;
     left: 50%;
     margin-left: -90px;
+	top: 50%;
+    margin-top: -25px;
+	transition: 0.2s ease all;
 }
 
-.donation .donate-btn a:hover {
+.donation .donate-btn:hover a {
 	background: #EF3340;
-	color: #fff;
 	border: 2px solid #EF3340;
+    height: 460px;
+    line-height: 460px;
+    margin: 0;
+    width: 90%;
+    left: 5%;
+    margin-left: 0px;
+	top: 20px;
+
 }
 
 
