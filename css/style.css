@@ -181,17 +181,38 @@ nav.bg-light { background: #fff !important;}
 .hero {
     margin-top: 77px;
     background-image: url(../images/hero@2x.png);
-    padding: 200px 0;
+    padding: 240px 0;
     background-size: cover;
 	margin-bottom: 0;
 }
 
-.hero .hero-text {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
+.hero .title-1 {
+    font-size: 280px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    text-align: center;
+    line-height: 170px;
     display: block;
-    padding: 0px 0;
+    height: auto;
+    margin: 0;
+}
+
+.hero .title-2 {
+    font-size: 156px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    text-align: center;
+    margin: 0;
+    line-height: 94px;
+}
+
+.hero .title-3 {
+    font-size: 167px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    text-align: center;
+    margin: 0;
+    line-height: 100px;
 }
 
 /*---- .intro ----*/
@@ -444,6 +465,9 @@ nav.bg-light { background: #fff !important;}
     clear: both;
 }
 
+/*---- Contact Page ----*/
+/*---- About Page ----*/
+/*---- Contact Page ----*/
 
 /*---- Footer ----*/
 footer {
