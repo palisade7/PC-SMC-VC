@@ -283,17 +283,6 @@ nav.bg-light { background: #fff !important;}
 
 }
 
-/*---- .split-block ----*/
-
-.split-block {
-	width: 100%;
-}
-
-.split-block .half {
-	width: 50%;
-	padding: 0;
-}
-
 /*---- .intro ----*/
 .intro {
     background-image: url(../images/pattern-1.gif);
@@ -545,7 +534,58 @@ nav.bg-light { background: #fff !important;}
 }
 
 /*---- Contact Page ----*/
+
+
 /*---- About Page ----*/
+
+/*---- .split-block ----*/
+
+.split-block {
+    width: 100%;
+    background: #2B2B2B;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.split-block .half {
+	width: 50%;
+	padding: 0;
+}
+
+.split-block .half h2 {
+	font-size: 38px;
+    color: #fff;
+    padding: 80px 40px 20px;
+    margin: 0;
+}
+
+.split-block .half p {
+	font-weight: 200;
+	font-size: 21px;
+	color: #FFFFFF;
+	letter-spacing: 0.33px;
+	line-height: 30px;
+    padding: 0px 40px 60px;
+    margin: 0;
+
+}
+
+.split-block .half img {
+    min-width: 100%;
+    width: 100%;
+}
+
+/*---- Refuel Page ----*/
+
+.four-col {
+	width: 100%;
+}
+
+.four-col .one-qtr {
+	width: 25%;
+
+}
+
 /*---- Contact Page ----*/
 
 /*---- Footer ----*/
