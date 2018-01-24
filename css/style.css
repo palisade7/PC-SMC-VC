@@ -179,7 +179,7 @@ nav.bg-light { background: #fff !important;}
 
 /*---- .hero ----*/
 .hero {
-    margin-top: 77px;
+    margin-top: 84px;
     background-image: url(../images/hero@2x.png);
     padding: 240px 0;
     background-size: cover;
@@ -188,7 +188,7 @@ nav.bg-light { background: #fff !important;}
 
 .hero .title-1 {
     font-size: 280px;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 2px #fff;
     color: transparent;
     text-align: center;
     line-height: 170px;
@@ -199,7 +199,7 @@ nav.bg-light { background: #fff !important;}
 
 .hero .title-2 {
     font-size: 156px;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 2px #fff;
     color: transparent;
     text-align: center;
     margin: 0;
@@ -208,11 +208,90 @@ nav.bg-light { background: #fff !important;}
 
 .hero .title-3 {
     font-size: 167px;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 2px #fff;
     color: transparent;
     text-align: center;
     margin: 0;
     line-height: 100px;
+}
+
+/*---- .subheader ----*/
+.subheader {
+    margin-top: 84px;
+    background-image: url(../images/hero@2x.png);
+    padding: 130px 0;
+    background-size: cover;
+	margin-bottom: 0;
+}
+
+.subheader .page-title {
+    font-size: 180px;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    text-align: center;
+    line-height: 170px;
+    display: block;
+    height: auto;
+    margin: 0;
+}
+
+/*---- Sub-header Intro Block ----*/
+.sub-intro {
+    background: #fff;
+    padding: 120px 0;
+	text-align: center;
+}
+
+.sub-intro h2 {
+	font-family: RM pro;
+	font-weight: 600;
+	font-size: 35px;
+	color: #231F20;
+	letter-spacing: 0.5px;
+	line-height: 35px;
+	text-transform: none;
+}
+
+.sub-intro p {
+	font-weight: 200;
+	font-size: 28px;
+	color: #231F20;
+	letter-spacing: 0.5px;
+	line-height: 40px;
+}
+
+/*---- .cta-center ----*/
+.cta-center {
+    margin-top: 0;
+    background: #fff;
+    padding: 130px 0;
+    background-size: cover;
+	margin-bottom: 0;
+	clear: both;
+	text-align: center;
+}
+
+.cta-center p {
+    font-weight: 200;
+	font-size: 28px;
+	color: #231F20;
+	letter-spacing: 0.5px;
+	line-height: 40px;
+}
+
+.cta-center a.btn {
+
+}
+
+/*---- .split-block ----*/
+
+.split-block {
+	width: 100%;
+}
+
+.split-block .half {
+	width: 50%;
+	padding: 0;
 }
 
 /*---- .intro ----*/
