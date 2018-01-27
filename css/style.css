@@ -534,9 +534,88 @@ nav.bg-light { background: #fff !important;}
 }
 
 /*---- Contact Page ----*/
+.sub-header-contact {
+    margin-top: 84px;
+    margin-bottom: 0;
+    height: 600px;
+    overflow: hidden;
+    height: 577px;
+}
+
+.map-container {
+    width: 100%;
+}
+
+.contact-title .title-1 {
+    font-size: 130px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    text-align: center;
+    line-height: 86px;
+    display: block;
+    height: auto;
+    font-family: 'Barlow';
+    text-transform: lowercase;
+}
+
 
 
 /*---- About Page ----*/
+
+
+.hash-tag {
+    color: #F33344;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+}
+
+.split-block-careers .half {
+    width: 50%;
+    background: #FFF;
+    color: #000;
+    min-height: 510px;
+    overflow: hidden;
+}
+
+.split-block-careers .half p {
+    font-size: 21px;
+    line-height: 30px;
+    margin-top: 70px;
+}
+
+.insta-gallery .container {
+    max-width: 100%;
+    padding: 50px;
+}
+
+.red .blue {  
+    min-height: 380px;
+    width: 380px;
+}
+
+.insta-gallery p {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.insta-gallery img {
+    background-position: contain;
+}
+
+.judge-title .title-1 {
+    font-size: 130px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    text-align: center;
+    line-height: 86px;
+    display: block;
+    height: auto;
+    font-family: 'Barlow';
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+
 
 /*---- .split-block ----*/
 
@@ -587,6 +666,10 @@ nav.bg-light { background: #fff !important;}
 }
 
 /*---- Contact Page ----*/
+
+.contact-title {
+    text-transform: lowercase;
+}
 
 /*---- Footer ----*/
 footer {
