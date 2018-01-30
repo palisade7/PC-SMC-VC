@@ -171,11 +171,13 @@ nav.bg-light { background: #fff !important;}
 	max-width: 190px;
 }
 
-/*---- Sub-header ----*/
-.sub-header {
-	
+@media only screen and (max-width: 768px) {
+	  
 }
 
+@media only screen and (max-width: 640px) {
+	
+}
 
 /*---- .hero ----*/
 .hero {
@@ -215,6 +217,14 @@ nav.bg-light { background: #fff !important;}
     line-height: 100px;
 }
 
+@media only screen and (max-width: 768px) {
+	  
+}
+
+@media only screen and (max-width: 640px) {
+	
+}
+
 /*---- .subheader ----*/
 .subheader {
     margin-top: 84px;
@@ -235,11 +245,30 @@ nav.bg-light { background: #fff !important;}
     margin: 0;
 }
 
-/*---- Sub-header Intro Block ----*/
+@media only screen and (max-width: 768px) {
+	  
+}
+
+@media only screen and (max-width: 640px) {
+	
+}
+
+@media only screen and (max-width: 465px) {
+	
+}
+
+/*---- Subheader Intro Block ----*/
 .sub-intro {
     background: #fff;
     padding: 120px 0;
 	text-align: center;
+}
+
+.sub-intro .container {
+	max-width: 1200px;
+	width: 100%;
+	padding-left:  40px;
+	padding-right:  40px;
 }
 
 .sub-intro h2 {
@@ -288,6 +317,7 @@ nav.bg-light { background: #fff !important;}
     background-image: url(../images/pattern-1.gif);
     padding: 230px 0;
 	margin-bottom: 0;
+	clear: both;
 }
 
 .intro img {
@@ -299,10 +329,19 @@ nav.bg-light { background: #fff !important;}
 }
 
 .intro p {
-    font-size: 40px;
+    font-size: 34px;
     color: #FFFFFF;
     letter-spacing: 0.5px;
-    line-height: 56px;
+    line-height: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 26px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    line-height: 38px;
     font-weight: 300;
     text-align: center;
 }
@@ -310,6 +349,11 @@ nav.bg-light { background: #fff !important;}
 .intro p span {
 	font-weight: 600;
 }
+
+.intro.about {
+	padding: 180px 0;
+}
+
 
 .intro a.btn-link {
 	font-family: 'BankGothicBT-Medium';
@@ -329,6 +373,21 @@ nav.bg-light { background: #fff !important;}
 	font-size: 32px;
 }
 
+@media only screen and (max-width: 768px) {
+	.intro.about {
+		padding: 120px 0;
+	}
+	
+	.intro p, .intro.about p {
+		font-size: 26px;
+		color: #FFFFFF;
+		letter-spacing: 0.5px;
+		line-height: 38px;
+		font-weight: 300;
+		text-align: center;
+	}
+}
+/*---- Donation Block Styles ----*/
 .donation {
     margin: 0px;
     padding: 0;
@@ -558,10 +617,7 @@ nav.bg-light { background: #fff !important;}
     text-transform: lowercase;
 }
 
-
-
 /*---- About Page ----*/
-
 
 .hash-tag {
     color: #F33344;
@@ -570,23 +626,38 @@ nav.bg-light { background: #fff !important;}
 }
 
 .split-block-careers .half {
+	display: table;
+    margin: 0;
+    color: #222;
+    background-color: #ffffff;
     width: 50%;
-    background: #FFF;
-    color: #000;
-    min-height: 510px;
-    overflow: hidden;
+    height: 600px;
+    position: relative;
+    top: 0px;
 }
 
 .split-block-careers .half p {
-    font-size: 21px;
-    line-height: 30px;
-    margin-top: 70px;
+	position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+    padding: 0 40px;
 }
 
-.insta-gallery .container {
-    max-width: 100%;
-    padding: 50px;
+.insta-gallery {
+    margin: 80px 0;
 }
+
+.insta-gallery .col-sm-3 {
+    padding: 0px;
+}
+
+.insta-gallery .col-sm-3 img {
+    width: 100%;
+}
+
 
 .red .blue {  
     min-height: 380px;
@@ -602,20 +673,73 @@ nav.bg-light { background: #fff !important;}
     background-position: contain;
 }
 
-.judge-title .title-1 {
-    font-size: 130px;
+.judge-title {
+	position: relative;
+    display: table-cell;
+    vertical-align: middle;
+	font-family: 'BankGothicBT-Medium';
+	text-transform: uppercase;
+	font-size: 110px;
     -webkit-text-stroke: 2px #000;
-    color: transparent;
+	color: transparent;
+	line-height: 75px;
+	width: 100%;
     text-align: center;
-    line-height: 86px;
-    display: block;
-    height: auto;
-    font-family: 'Barlow';
-    text-transform: uppercase;
-    padding-top: 100px;
 }
 
+@media only screen and (max-width: 1200px) {
+	.split-block-careers .half {
+		height: 805px;
+		
+	}
+}
 
+@media only screen and (max-width: 992px) {
+  .split-block-careers .half {
+		height: auto;
+		width: 100%;
+	  	padding: 120px 40px;
+	}
+	
+	.split-block-careers .half.float-left {
+		padding-bottom: 0;
+	}
+	
+	.split-block-careers .half .judge-title {
+		font-size: 80px;
+		display: block;
+	}
+	
+	.split-block-careers .half p {
+		text-align: center;
+	}
+	
+	.split-block-careers .half .judge-title br {
+		display: none;
+	}
+	
+	
+}
+
+@media only screen and (max-width: 768px) {
+  
+}
+
+@media only screen and (max-width: 640px) {
+	.insta-gallery .col-sm-3 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+  
+}
+
+@media only screen and (max-width: 368px) {
+  
+}
 
 /*---- .split-block ----*/
 
@@ -629,6 +753,13 @@ nav.bg-light { background: #fff !important;}
 .split-block .half {
 	width: 50%;
 	padding: 0;
+}
+
+@media only screen and (max-width: 992px) {
+	.split-block .half.float-left {
+		width: 100%;
+		padding: 80px;
+	}
 }
 
 .split-block .half h2 {
@@ -652,6 +783,18 @@ nav.bg-light { background: #fff !important;}
 .split-block .half img {
     min-width: 100%;
     width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+	.split-block .half {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.split-block .half h2, .split-block .half p {
+		text-align: center;
+		padding: 0;
+	}
 }
 
 /*---- Refuel Page ----*/
@@ -746,6 +889,7 @@ footer .bottom-bar {
 	background: #000;
 	width: 100%;
 	float: left;
+	padding: 0 40px;
 }
 
 footer .bottom-bar .nav-link {
@@ -772,4 +916,8 @@ footer .bottom-bar p.copyright {
 footer .bottom-bar p.copyright a {
 	color: #737373;
 	text-decoration: underline;
+}
+
+footer .bottom-bar p.copyright a:hover {
+	color: #EF3340;
 }
