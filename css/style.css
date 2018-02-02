@@ -54,6 +54,18 @@ a.btn-primary:hover {
     border: 2px solid #EF3340;
 }
 
+.btn.btn-stroke {
+	background: transparent;
+	border: 2px solid #EF3340;
+	color: #FFFFFF;
+}
+
+.btn.btn-stroke:hover {
+   	background: #EF3340;
+	color: #FFFFFF;
+	border: 2px solid #EF3340;
+}
+
 a.nav-link {
 	font-family: RM Pro;
 	font-size: 14px;
@@ -117,14 +129,16 @@ ul.social .channel-5 .nav-link {
 	background-image: url(../images/youtube.png);
 }
 
-ul.navbar-nav.social li.nav-item.explore .nav-link {
-    width: auto;
-    padding: 0 20px 0 60%;
-    position: relative;
-}
-
 ul.navbar-nav.social li.nav-item.explore {
     width: 100%;
+	position: relative
+}
+
+ul.navbar-nav.social li.nav-item.explore .nav-link {
+    width: auto;
+    padding: 1px 16px 0 40px;
+    position: relative;
+    line-height: 30px;
 }
 
 ul.navbar-nav.social li.nav-item.explore .nav-link:hover {
@@ -137,11 +151,41 @@ ul.navbar-nav.social li.nav-item.explore .nav-link span {
 	top: 0px;
 }
 
-ul.navbar-nav.social li.nav-item.explore .nav-link {
-    width: auto;
-    padding: 0 20px 0 50%;
-    position: relative;
-    line-height: 30px;
+.explore ul {
+	display: none;
+    list-style: none;
+    text-align: left;
+    position: absolute;
+    top: 25px;
+    background: #fff;
+    padding: 52px 0 20px 20px;
+    width: 190px;
+	border-radius: 0 0 6px 6px;
+}
+
+.explore ul li {
+    display: block;
+}
+
+.explore ul li a {
+    color: #000;
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.25s ease all;
+    letter-spacing: 1px;
+    font-family: RM pro;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.explore ul li a:hover {
+	color: #EF3340;
+}
+
+.explore:hover ul {
+	display: block;
 }
 
 .sub-header h1.stroke {
@@ -178,6 +222,95 @@ nav.bg-light { background: #fff !important;}
 @media only screen and (max-width: 640px) {
 	
 }
+
+/*---- .subheader ----*/
+.subheader {
+    margin-top: 84px;
+    background-image: url(../images/hero@2x.png);
+    padding: 180px 0;
+    background-size: cover;
+	margin-bottom: 0;
+}
+
+.subheader .page-title {
+    font-size: 150px;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    text-align: center;
+    line-height: 120px;
+    display: block;
+    height: auto;
+    margin: 0;
+    letter-spacing: -10px;
+}
+
+@media only screen and (max-width: 768px) {
+	  
+}
+
+@media only screen and (max-width: 640px) {
+	
+}
+
+@media only screen and (max-width: 465px) {
+	
+}
+
+/*---- .split-block ----*/
+
+.split-block {
+    width: 100%;
+    background: #2B2B2B;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.split-block .half {
+	width: 50%;
+	padding: 0;
+}
+
+@media only screen and (max-width: 992px) {
+	.split-block .half.float-left {
+		width: 100%;
+		padding: 80px;
+	}
+}
+
+.split-block .half h2 {
+	font-size: 38px;
+    color: #fff;
+    padding: 80px 40px 20px;
+    margin: 0;
+}
+
+.split-block .half p {
+	font-weight: 200;
+	font-size: 21px;
+	color: #FFFFFF;
+	letter-spacing: 0.33px;
+	line-height: 30px;
+    padding: 0px 40px 60px;
+    margin: 0;
+}
+
+.split-block .half img {
+    min-width: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+	.split-block .half {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.split-block .half h2, .split-block .half p {
+		text-align: center;
+		padding: 0;
+	}
+}
+
 
 /*---- .hero ----*/
 .hero {
@@ -222,38 +355,6 @@ nav.bg-light { background: #fff !important;}
 }
 
 @media only screen and (max-width: 640px) {
-	
-}
-
-/*---- .subheader ----*/
-.subheader {
-    margin-top: 84px;
-    background-image: url(../images/hero@2x.png);
-    padding: 130px 0;
-    background-size: cover;
-	margin-bottom: 0;
-}
-
-.subheader .page-title {
-    font-size: 180px;
-    -webkit-text-stroke: 2px #fff;
-    color: transparent;
-    text-align: center;
-    line-height: 170px;
-    display: block;
-    height: auto;
-    margin: 0;
-}
-
-@media only screen and (max-width: 768px) {
-	  
-}
-
-@media only screen and (max-width: 640px) {
-	
-}
-
-@media only screen and (max-width: 465px) {
 	
 }
 
@@ -387,6 +488,7 @@ nav.bg-light { background: #fff !important;}
 		text-align: center;
 	}
 }
+
 /*---- Donation Block Styles ----*/
 .donation {
     margin: 0px;
@@ -476,7 +578,7 @@ nav.bg-light { background: #fff !important;}
 .third-block { width: 33.33333%;}
 .qrt-block { width: 25%;}
 .half-block { width: 50%;}
-.twothirds-block { width: 66.6666%;}
+.two-thirds-block { width: 66.6666%;}
 
 /*---- Invite a Friend ----*/
 .friend {
@@ -656,8 +758,8 @@ nav.bg-light { background: #fff !important;}
 
 .insta-gallery .col-sm-3 img {
     width: 100%;
+	height: auto;
 }
-
 
 .red .blue {  
     min-height: 380px;
@@ -670,7 +772,7 @@ nav.bg-light { background: #fff !important;}
 }
 
 .insta-gallery img {
-    background-position: contain;
+    background-position: ;
 }
 
 .judge-title {
@@ -741,60 +843,275 @@ nav.bg-light { background: #fff !important;}
   
 }
 
-/*---- .split-block ----*/
+/*---- Athletes Page ----*/
 
-.split-block {
+.athletes {
+    float: left;
     width: 100%;
-    background: #2B2B2B;
-    min-height: 300px;
-    overflow: hidden;
+    max-width: 100%;
 }
 
-.split-block .half {
-	width: 50%;
+.athletes .individual {
+    position: relative;
+	padding: 0;
+	background: #000;
+}
+
+.athletes .individual img {
+	width: 100%;
+	height: auto;
+}
+
+.athletes .individual .overlay {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url(../images/athletes/athlete-1-flip.jpg);
+	background-size: cover;
+	transition: 0.3s ease all;
+}
+
+.athletes .individual:hover .overlay {
+	display: block;
+}
+
+.athletes .individual .btn.btn-stroke {
+	background-color: transparent;
+	border: transparent;
+	color: transparent;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0px 20px 20px;
+}
+
+.athletes .individual:hover .btn.btn-stroke {
+	border: 2px solid #fff;
+	color: #fff;
+	background: transparent;
+}
+
+.athletes .individual .btn.btn-stroke:hover {
+	border: 2px solid #EF3340;
+	color: #fff;
+	background: #EF3340;
+}
+
+.athlete-mission {
+	background: #D2D2D2;
+    text-align: center;
+    padding: 100px 0;
+    clear: both;
+}
+
+.athlete-mission p {
+	margin-top: 40px;
+    font-size: 34px;
+    font-family: Rm Pro;
+    text-align: center;
+    font-weight: 300;
+    line-height: 42px;
+}
+
+/*---- Individual Page ----*/
+.individual-intro {
+	position: relative;
+	width: 100%;
+    margin: 84px auto 0;
+    float: left;
+	padding: 130px 0 0;
+}
+
+.individual-intro .back-link a {
+	font-family: RM pro;
+	font-size: 14px;
+	color: #000000;
+	letter-spacing: 0.33px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.individual-intro .split-block {
+	background: transparent;	
+}
+
+.individual-intro img {
+	width: 100%;
+}
+
+.individual-intro .split-block p {
+	color: #000;
+    padding-left: 0;
+    font-size: 21px;
+	padding-right: 60px;
+}
+
+.individual-intro .two-thirds-block {
+	padding-top: 100px;
+	padding-bottom: 130px;
+}
+
+.individual-intro a.social-btn {
+	font-family: RM pro;
+    font-size: 21px;
+    color: #EF3340;
+    letter-spacing: 0.33px;
+    line-height: 55px;
+    height: 55px;
+    display: block;
+	margin: 50px 0 0;
+}
+
+.individual-intro a.social-btn img {
+	width: 55px;
+    margin-right: 10px;
+    margin-top: 0;
+}
+
+.individual-intro .third-block {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.individual-intro .third-block img {
+	max-width: 376px;
+	width: 100%;
+}
+
+.sessions h3{
+	color: #fff;
+	text-align: center;
+}
+
+.sessions .schedule {
+	background: #fff;
+	width: 100%;
+	padding: 30px 15px;
+}
+
+.sessions .schedule .slot {
+	border-top: 1px solid #000;
+}
+
+.sessions .schedule .slot .date,
+.sessions .schedule .slot .time,
+.sessions .schedule .slot .name,
+.sessions .schedule .slot .duration {
+	display: block;
+	float: left;
+}
+
+.sessions .schedule .slot .date { width: 15%; }
+.sessions .schedule .slot .time { width: 15%; }
+.sessions .schedule .slot .name { width: 25%; }
+.sessions .schedule .slot .duration { width: 15%; }
+
+
+.spotify {
+	width: 100%;
+	float: left;
+	padding: 130px 0;
+}
+
+.spotify .third-block {
+	float: left;
+	padding: 0 15px;
+}
+
+.spotify h3 {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+
+/*---- Classes Page ----*/
+
+.classes {
+	max-width: 1600px;
+	width: 100%;
+	padding: 0 20px;
+	background: #fff;
+	margin: 130px auto;
+}
+
+.classes .half {
+	text-align: center;
+	position: relative;
+	width: 48%;
+    margin: 0 1%;
+}
+
+.classes .half h2 {
+	font-family: 'BankGothicBT-Medium';
+	font-size: 42px;
+	color: #000;
+	position: relative;
+	padding-top: 0;
+}
+
+.classes .half p {
+	position: relative;
+	font-family: Rm pro;
+	font-size: 21px;
+	color: #000;
+	z-index: 1;
 	padding: 0;
 }
 
-@media only screen and (max-width: 992px) {
-	.split-block .half.float-left {
-		width: 100%;
-		padding: 80px;
-	}
+.classes .half img {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
 }
 
-.split-block .half h2 {
-	font-size: 38px;
-    color: #fff;
-    padding: 80px 40px 20px;
-    margin: 0;
+.classes .class-1,
+.classes .class-2 {
+	height: auto;
+    background-size: cover;
+    padding: 60px;
+    position: relative;
+	cursor: pointer;
 }
 
-.split-block .half p {
-	font-weight: 200;
-	font-size: 21px;
-	color: #FFFFFF;
-	letter-spacing: 0.33px;
-	line-height: 30px;
-    padding: 0px 40px 60px;
-    margin: 0;
-
+.classes .class-1 {
+    background-image: linear-gradient(rgba(255,255,255,0.8) 0%,  rgba(255,255,255,0.8) 100%), url(../images/classes-1.jpg);
 }
 
-.split-block .half img {
-    min-width: 100%;
-    width: 100%;
+.classes .class-2 {
+     background-image: linear-gradient(rgba(255,255,255,0.8) 0%,  rgba(255,255,255,0.8) 100%), url(../images/classes-2.jpg);
 }
 
-@media only screen and (max-width: 992px) {
-	.split-block .half {
-		width: 100%;
-		padding: 0;
-	}
-	
-	.split-block .half h2, .split-block .half p {
-		text-align: center;
-		padding: 0;
-	}
+.classes .btn {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    margin-top: -25px;
+	z-index: 1;
+}
+
+.classes .class-1:hover .btn,
+.classes .class-2:hover .btn {
+    display: block;
+}
+
+.classes .class-1:hover h2,
+.classes .class-1:hover p,
+.classes .class-2:hover h2,
+.classes .class-2:hover p {
+    opacity: 0;
 }
 
 /*---- Refuel Page ----*/
@@ -805,8 +1122,53 @@ nav.bg-light { background: #fff !important;}
 
 .four-col .one-qtr {
 	width: 25%;
-
+	padding: 20px;
 }
+
+.four-col .one-qtr {
+	text-align: center;
+}
+
+.four-col .one-qtr h2 {
+	font-family: Rm pro;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.four-col .one-qtr span {
+	font-weight: 300;
+}
+
+.four-col .one-qtr img {
+	width: 100%;
+	height: auto;
+}
+
+.four-col .one-qtr h4 {
+	font-size: 18px;
+	text-transform: none;	
+}
+
+.four-col .one-qtr p {
+	padding: 40px 0;
+}
+
+.four-col .one-qtr ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.four-col .one-qtr ul li {
+	font-weight: 300;
+}
+
+.meals {
+	float: left;
+	margin-bottom: 130px;
+}
+
+
 
 /*---- Contact Page ----*/
 

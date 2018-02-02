@@ -22,7 +22,8 @@
             <li><a href="#2" class="next">&rarr;</a></li>
         </ul>
     </div>
-    <table class="table account-listing" id="classlisting">
+    	<table class="table account-listing" id="classlisting">
+        
         <thead>
             <tr>
                 <th><span class="hidden-phone">Share</span></th>
@@ -34,10 +35,12 @@
                 <th>Status</th>
                 <th>Action</th>
             </tr>
+            
             <tr class="only-xs-mobile">
                 <td colspan="8"><small>Rotate to landscape view to see more details</small></td>
             </tr>
         </thead>
+        
         <tbody>
             <tr class="data ">
                 <td>
