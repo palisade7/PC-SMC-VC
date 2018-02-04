@@ -4,7 +4,6 @@ html {
 body {
 	position: relative;
 	padding-top: 69px;
-	background: #DDDCE2 url(../images/content_bg.jpg) repeat left top;
 	-webkit-font-smoothing: antialiased;
 	font-size: 14px;
 	font-family: 'Lato', sans-serif !important;
@@ -157,7 +156,8 @@ input[type="color"]:focus,
 	/*margin-right: 40px;*/
 }
 .navbar .nav > li > a {
-	color: #F8F8F8;
+    color: #000;
+    padding: 22px 15px;
 	font-size: 15px;
 	font-weight: bold;
     text-shadow: none;
@@ -168,7 +168,7 @@ input[type="color"]:focus,
 	transition: all .2s linear;
 }
 .navbar .nav > li > a:hover {
-	color: #ccc;
+    color: #EF3340;
 }
 .navbar .nav > li.active > a,
 .navbar .nav > li.active:hover > a,
