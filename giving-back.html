@@ -37,8 +37,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarsExampleDefault">
+       	
+       	<a class="logo navbar-brand" href="index.html"><img src="images/Logo.png" alt=""></a>
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarsExampleDefault">
             <ul class="navbar-nav social">
                 <li class="nav-item active channel-1">
                     <a class="nav-link" href="#"></a>
@@ -55,30 +57,36 @@
                 <li class="nav-item channel-5">
                     <a class="nav-link" href="#"></a>
                 </li>
-                <li class="nav-item explore">
-                    <a class="nav-link" href="#">Explore <span>+</span></a>
-                    
-                    <ul>
-                    	<li><a href="classes.html">Classes</a></li>
-                    	<li><a href="athletes.html">Athletes</a></li>
-                    	<li><a href="refuel.html">Refuel</a></li>
-                    	<li><a href="giving-back.html">Giving Back</a></li>
-                    	<li><a href="about.html">About</a></li>
-                    	<li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </li>
+				<li class="nav-item explore dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore </a>
+					
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="classes.html">Classes</a>
+                    	<a class="dropdown-item" href="athletes.html">Athletes</a>
+                    	<a class="dropdown-item" href="refuel.html">Refuel</a>
+                    	<a class="dropdown-item" href="giving-back.html">Giving Back</a>
+                    	<a class="dropdown-item" href="about.html">About</a>
+                    	<a class="dropdown-item" href="contact.html">Contact</a>
+					</div>
+				</li>
             </ul>
-
-			<a class="logo navbar-brand" href="index.html"><img src="images/Logo.png" alt=""></a>
-
-           	<ul class="nav float-right">
+            
+            <ul class="navbar-nav float-right">
+                <li class="nav-item active channel-1">
+                    <a class="nav-link" href="#"></a>
+                </li>
+			</ul>
+           	<ul class="navbar-nav float-right">
 				<li class="nav-item">
 					<a class="nav-link" href="zingfit/choose-series.php">Buy</a>
 				</li>
+        		
          		<li class="nav-item">
 					<a class="nav-link" href="zingfit/account-login.php">Sign In / Up</a>
 				</li>
-           		<a class="btn btn-primary" href="zingfit/buy-series.php" role="button">Book a Class</a>
+          		
+           		<a class="btn btn-primary primary-cta-btn" href="zingfit/buy-series.php" role="button">Book a Class</a>
            	</ul>
         </div>
     </nav>

@@ -89,15 +89,20 @@ ul.social {
     float: left;
 }
 
-ul.navbar-nav.social li.nav-item a.nav-link {
+ul.navbar-nav li.nav-item a.nav-link,
+ul.navbar-nav.social li.nav-item a.nav-link{
     position: relative;
-	width: 30px;
+	width: auto;
     height: 30px;
     color: #000;
     float: left;
     display: block;
     padding: 0px 10px;
     background-position: 0px -5px;
+}
+
+ul.navbar-nav.social li.nav-item a.nav-link {
+	width: 30px;
 }
 
 ul.navbar-nav.social .channel-1,
@@ -136,9 +141,9 @@ ul.navbar-nav.social li.nav-item.explore {
 
 ul.navbar-nav.social li.nav-item.explore .nav-link {
     width: auto;
-    padding: 1px 16px 0 40px;
+    padding: 0px 0 0 40px;
     position: relative;
-    line-height: 30px;
+    line-height: 18px;
 }
 
 ul.navbar-nav.social li.nav-item.explore .nav-link:hover {
@@ -199,6 +204,16 @@ ul.navbar-nav.social li.nav-item.explore .nav-link span {
 	position: relative;
 }
 
+.dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "+";
+   	border: none;
+	top: 3px;
+	position: relative;
+}
+
 /*---- Header ----*/
 nav.bg-light { background: #fff !important;}
 
@@ -215,17 +230,23 @@ nav.bg-light { background: #fff !important;}
 	max-width: 190px;
 }
 
-@media only screen and (max-width: 768px) {
-	  
+@media only screen and (max-width: 1050px) {
+	.logo {
+		position: absolute;
+		margin-left: -100px;
+		left: 50%;
+		width: 200px;
+		margin-right: 0;
+	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
 	
 }
 
 /*---- .subheader ----*/
 .subheader {
-    margin-top: 84px;
+    margin-top: 0;
     background-image: url(../images/hero@2x.png);
     padding: 180px 0;
     background-size: cover;
@@ -233,27 +254,61 @@ nav.bg-light { background: #fff !important;}
 }
 
 .subheader .page-title {
-    font-size: 150px;
+    font-size: 138px;
     -webkit-text-stroke: 2px #fff;
     color: transparent;
     text-align: center;
-    line-height: 120px;
+    line-height: 138px;
     display: block;
     height: auto;
     margin: 0;
-    letter-spacing: -10px;
+    letter-spacing: -5px;
+}
+
+@media only screen and (max-width: 992px) {
+	.subheader {
+		padding: 120px 0 120px;
+	}
+	
+	.subheader .page-title {
+		font-size: 108px;
+		line-height: 108px;
+	}
 }
 
 @media only screen and (max-width: 768px) {
-	  
+	.subheader {
+		margin-top: 160px;
+		padding: 80px 0 80px;
+	}
+		
+	.subheader .page-title {
+		font-size: 83px;
+		-webkit-text-stroke: 1px #fff;
+		line-height: 83px;
+	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 575px) {
+	.subheader {
+		margin-top: 109px;
+		padding: 180px 0 80px;
+	}
 	
+	.subheader .page-title {
+		font-size: 64px;
+		-webkit-text-stroke: 1px #fff;
+		line-height: 64px;
+		letter-spacing: 0px;
+	}
 }
 
-@media only screen and (max-width: 465px) {
-	
+@media only screen and (max-width: 434px) {
+	.subheader .page-title {
+		font-size: 39px;
+		line-height: 39px;
+		letter-spacing: 0px;
+	}
 }
 
 /*---- .split-block ----*/
@@ -362,7 +417,9 @@ nav.bg-light { background: #fff !important;}
 .sub-intro {
     background: #fff;
     padding: 120px 0;
-	text-align: center;
+    text-align: center;
+    float: left;
+    width: 100%;
 }
 
 .sub-intro .container {
@@ -374,12 +431,13 @@ nav.bg-light { background: #fff !important;}
 
 .sub-intro h2 {
 	font-family: RM pro;
-	font-weight: 600;
-	font-size: 35px;
-	color: #231F20;
-	letter-spacing: 0.5px;
-	line-height: 35px;
-	text-transform: none;
+    font-weight: 600;
+    font-size: 35px;
+    color: #231F20;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    text-transform: none;
+    margin-bottom: 30px;
 }
 
 .sub-intro p {
@@ -695,7 +753,7 @@ nav.bg-light { background: #fff !important;}
 }
 
 /*---- Contact Page ----*/
-.sub-header-contact {
+.subheader-contact {
     margin-top: 84px;
     margin-bottom: 0;
     height: 600px;
@@ -707,16 +765,38 @@ nav.bg-light { background: #fff !important;}
     width: 100%;
 }
 
-.contact-title .title-1 {
+.contact-details {
+	
+} 
+
+.contact-details .contact-title {
     font-size: 130px;
     -webkit-text-stroke: 2px #000;
     color: transparent;
     text-align: center;
-    line-height: 86px;
+    line-height: 110px;
     display: block;
     height: auto;
     font-family: 'Barlow';
-    text-transform: lowercase;
+    text-transform: uppercase;
+}
+
+.contact-details h2 {
+	font-size: 35px;
+	font-family: 'Barlow';
+	font-weight: 400;
+}
+
+.contact-details a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    line-height: 32px;
+    font-size: 22px;
+    font-family: 'Barlow';
+    margin: 0;
+    padding: 0;
 }
 
 /*---- About Page ----*/
@@ -827,20 +907,12 @@ nav.bg-light { background: #fff !important;}
   
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 576px) {
 	.insta-gallery .col-sm-3 {
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
-}
-
-@media only screen and (max-width: 475px) {
-  
-}
-
-@media only screen and (max-width: 368px) {
-  
 }
 
 /*---- Athletes Page ----*/
@@ -959,14 +1031,16 @@ nav.bg-light { background: #fff !important;}
 }
 
 .individual-intro a.social-btn {
-	font-family: RM pro;
+    font-family: RM pro;
     font-size: 21px;
     color: #EF3340;
     letter-spacing: 0.33px;
     line-height: 55px;
     height: 55px;
-    display: block;
-	margin: 50px 0 0;
+    display: inline-block;
+    margin: 50px 0 0;
+    width: auto;
+    cursor: pointer;
 }
 
 .individual-intro a.social-btn img {
@@ -991,14 +1065,24 @@ nav.bg-light { background: #fff !important;}
 	text-align: center;
 }
 
+.sessions.intro {
+	padding: 120px 0;
+}
+
 .sessions .schedule {
-	background: #fff;
-	width: 100%;
-	padding: 30px 15px;
+    background: #fff;
+    width: 100%;
+    padding: 30px;
 }
 
 .sessions .schedule .slot {
-	border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 65px;
+    padding: 13px 0;
+}
+
+.sessions .schedule .slot:first-child {
+    border-top: 1px solid #000;
 }
 
 .sessions .schedule .slot .date,
@@ -1007,13 +1091,28 @@ nav.bg-light { background: #fff !important;}
 .sessions .schedule .slot .duration {
 	display: block;
 	float: left;
+	line-height: 38px;
 }
 
 .sessions .schedule .slot .date { width: 15%; }
-.sessions .schedule .slot .time { width: 15%; }
-.sessions .schedule .slot .name { width: 25%; }
-.sessions .schedule .slot .duration { width: 15%; }
+.sessions .schedule .slot .time { width: 11%; }
+.sessions .schedule .slot .name { width: 40%; }
+.sessions .schedule .slot .duration { width: 16%; 
+text-align: right; }
+.sessions .schedule .slot .btn.btn-primary {
+    width: 15%;
+    margin: 0;
+    height: 38px;
+    color: #fff;
+    line-height: 34px;
+    padding: 0;
+    font-size: 13px;
+	float: right;
+}
 
+.sessions .schedule .slot .btn.btn-primary:hover {
+	color: #EF3340;
+}
 
 .spotify {
 	width: 100%;
@@ -1114,6 +1213,16 @@ nav.bg-light { background: #fff !important;}
     opacity: 0;
 }
 
+@media only screen and (max-width: 992px) {
+		.classes .half {
+			text-align: center;
+			position: relative;
+			width: 98%;
+			margin: 0 1%;
+		}
+}
+
+
 /*---- Refuel Page ----*/
 
 .four-col {
@@ -1168,6 +1277,21 @@ nav.bg-light { background: #fff !important;}
 	margin-bottom: 130px;
 }
 
+
+@media only screen and (max-width: 992px) {
+	.four-col .one-qtr {
+		width: 50%;
+		padding: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 576px) {
+	.four-col .one-qtr {
+		width: 100%;
+		padding: 20px;
+	}	
+}
 
 
 /*---- Contact Page ----*/
