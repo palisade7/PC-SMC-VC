@@ -34,7 +34,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,37 +59,34 @@
                     <a class="nav-link" href="#"></a>
                 </li>
 				<li class="nav-item explore dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore </a>
-					
-					<div class="dropdown-menu" aria-labelledby="dropdown04">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="classes.html">Classes</a>
-                    	<a class="dropdown-item" href="athletes.html">Athletes</a>
-                    	<a class="dropdown-item" href="refuel.html">Refuel</a>
-                    	<a class="dropdown-item" href="giving-back.html">Giving Back</a>
-                    	<a class="dropdown-item" href="about.html">About</a>
-                    	<a class="dropdown-item" href="contact.html">Contact</a>
-					</div>
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" data-target=".longdd" aria-haspopup="true" aria-expanded="false">Explore </a>
 				</li>
             </ul>
             
-            <ul class="navbar-nav float-right">
-                <li class="nav-item active channel-1">
-                    <a class="nav-link" href="#"></a>
-                </li>
-			</ul>
-           	<ul class="navbar-nav float-right">
+           	<ul class="navbar-nav right-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="zingfit/choose-series.php">Buy</a>
+					<a class="nav-link" href="#">Buy</a>
 				</li>
         		
          		<li class="nav-item">
-					<a class="nav-link" href="zingfit/account-login.php">Sign In / Up</a>
+					<a class="nav-link" href="#">Sign In / Up</a>
 				</li>
           		
-           		<a class="btn btn-primary primary-cta-btn" href="zingfit/buy-series.php" role="button">Book a Class</a>
+           		<a class="btn btn-primary primary-cta-btn" href="#" role="button">Book a Class</a>
            	</ul>
         </div>
+        
+        <div class="longdd">
+			<div class="vortex-subnav">
+				<a class="dropdown-item" href="about.html">About</a>	
+				<a class="dropdown-item" href="classes.html">Classes</a>
+				<a class="dropdown-item" href="athletes.html">Athletes</a>
+				<a class="dropdown-item" href="refuel.html">Refuel</a>
+				<a class="dropdown-item" href="giving-back.html">Giving Back</a>
+				<a class="dropdown-item" href="blog.html">Blog</a>
+				<a class="dropdown-item" href="faq.html">FAQ</a>
+			</div>
+		</div>
     </nav>
     
     <!-- .individual-intro -->
@@ -108,7 +105,7 @@
     		</div>
     		
     		<div class="third-block float-right">
-    			<img src="./images/stock/instructor.png" alt="">
+    			<img src="./images/Athletes-Individual-Athelete.jpg" alt="">
     		</div>
     	</div>
     </div>
@@ -118,6 +115,17 @@
     	<div class="container">
     		<h3>My Upcoming Sessions</h3>
 			
+<!--
+			<div class="schedule-headers">
+				<ul>
+					<li><a class="date-h"></a></li>
+					<li><a class="time-h"></a></li>
+					<li><a class="name-h"></a></li>
+					<li><a class="duration-h"></a></li>
+				</ul>
+			</div>
+-->
+			
 			
 			<div class="schedule">
 				<div class="slot">
@@ -125,7 +133,7 @@
 					<div class="time">7:00 AM</div>
 					<div class="name">Intervals Ride</div>
 					<div class="duration">45 min</div>
-					<a class="btn btn-primary">Book a seat</a>
+					<a class="btn btn-primary">Book</a>
 				</div>
 				
 				<div class="slot">
@@ -133,7 +141,7 @@
 					<div class="time">8:30 AM</div>
 					<div class="name">#FeelGood Ride</div>
 					<div class="duration">45 min</div>
-					<a class="btn btn-primary">Book a seat</a>
+					<a class="btn btn-primary">Book</a>
 				</div>
 				
 				<div class="slot">
@@ -141,7 +149,7 @@
 					<div class="time">7:30 PM</div>
 					<div class="name">New Tracks Ride</div>
 					<div class="duration">45 min</div>
-					<a class="btn btn-primary">Book a seat</a>
+					<a class="btn btn-primary">Book</a>
 				</div>
 				
 				<div class="slot">
@@ -149,7 +157,7 @@
 					<div class="time">7:00 AM</div>
 					<div class="name">Tabata Ride</div>
 					<div class="duration">45 min</div>
-					<a class="btn btn-primary">Book a seat</a>
+					<a class="btn btn-primary">Book</a>
 				</div>
 				
 				<div class="slot">
@@ -157,7 +165,7 @@
 					<div class="time">6:00 AM</div>
 					<div class="name">Y2K Hip Hop Ride</div>
 					<div class="duration">45 min</div>
-					<a class="btn btn-primary">Book a seat</a>
+					<a class="btn btn-primary">Book</a>
 				</div>
 			</div>
     	</div>
@@ -177,39 +185,40 @@
 	</div> 
    
     <!-- Footer -->
-    <footer>
-        <div class="subscribe container" style="display: none;">
-            <h4>Never miss a beat. Enter email below to be in the know for all things Vortex.</h4>
+	<footer>
+		<div class="subscribe container">
+			<h4>Never miss a beat. Enter email below to be in the know for all things Vortex.</h4>
 
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </div>
+			<form>
+				<div class="form-group">
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					<button type="submit" class="btn btn-primary">Subscribe</button>
+				</div>
 
-                <small class="no-spam">We promise not to spam. You’ll only receive important news and updates.</small>
-            </form>
-        </div>
+				<small class="no-spam">We promise not to spam. You’ll only receive important news and updates.</small>
+			</form>
+		</div>
 
-        <div class="bottom-bar container-fluid">
-            <ul class="nav float-left d-flex">
-                <li class="nav-item active">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="referafriend.php">Refer a Friend</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="careers.html">careers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
+		<div class="bottom-bar container-fluid">
+			<div class="mark-bg"></div>
+			<ul class="nav float-left d-flex">
+				<li class="nav-item active">
+					<a class="nav-link" href="faq.html">FAQ</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Refer a Friend</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html#careers">careers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
 
-            <p class="copyright float-right">© <a href="index.html" style="font-weight:400; color:#ef3340; text-transform: uppercase; text-decoration: none; ">Vortex</a> 2018, All rights reserved. <a href="privacy.html">Privacy</a> &amp; <a href="terms.html">Terms</a>. A <a href="solmarkcreative.com">SolMark Creative</a> website powered by <a href="#">zingFit</a></p>
-        </div>
-    </footer>
+			<p class="copyright float-right">© <a href="index.html" style="font-weight:400; color:#ef3340; text-transform: uppercase; text-decoration: none; ">Vortex</a> 2018, All rights reserved. <a href="privacy.html">Privacy</a> &amp; <a href="terms.html">Terms</a>. A <a href="http://www.solmarkcreative.com" target="_blank">Solmark Creative</a> website powered by <a href="http://www.zingfit.com/" target="_blank">zingFit</a></p>
+		</div>
+	</footer>
     <!-- /.container -->
 
 

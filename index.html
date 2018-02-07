@@ -33,7 +33,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,44 +58,43 @@
                     <a class="nav-link" href="#"></a>
                 </li>
 				<li class="nav-item explore dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore </a>
-					
-					<div class="dropdown-menu" aria-labelledby="dropdown04">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="classes.html">Classes</a>
-                    	<a class="dropdown-item" href="athletes.html">Athletes</a>
-                    	<a class="dropdown-item" href="refuel.html">Refuel</a>
-                    	<a class="dropdown-item" href="giving-back.html">Giving Back</a>
-                    	<a class="dropdown-item" href="about.html">About</a>
-                    	<a class="dropdown-item" href="contact.html">Contact</a>
-					</div>
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" data-target=".longdd" aria-haspopup="true" aria-expanded="false">Explore </a>
 				</li>
             </ul>
             
-            <ul class="navbar-nav float-right">
-                <li class="nav-item active channel-1">
-                    <a class="nav-link" href="#"></a>
-                </li>
-			</ul>
-           	<ul class="navbar-nav float-right">
+           	<ul class="navbar-nav right-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="zingfit/choose-series.php">Buy</a>
+					<a class="nav-link" href="#">Buy</a>
 				</li>
         		
          		<li class="nav-item">
-					<a class="nav-link" href="zingfit/account-login.php">Sign In / Up</a>
+					<a class="nav-link" href="#">Sign In / Up</a>
 				</li>
           		
-           		<a class="btn btn-primary primary-cta-btn" href="zingfit/buy-series.php" role="button">Book a Class</a>
+           		<a class="btn btn-primary primary-cta-btn" href="#" role="button">Book a Class</a>
            	</ul>
         </div>
+        
+        <div class="longdd">
+			<div class="vortex-subnav">
+				<a class="dropdown-item" href="about.html">About</a>	
+				<a class="dropdown-item" href="classes.html">Classes</a>
+				<a class="dropdown-item" href="athletes.html">Athletes</a>
+				<a class="dropdown-item" href="refuel.html">Refuel</a>
+				<a class="dropdown-item" href="giving-back.html">Giving Back</a>
+				<a class="dropdown-item" href="blog.html">Blog</a>
+				<a class="dropdown-item" href="faq.html">FAQ</a>
+			</div>
+		</div>
     </nav>
  
  	<!-- Hero -->
  	<div class="hero">
- 		<h1 class="title-1">Ride</h1>
- 		<h1 class="title-2">Rumble</h1>
- 		<h1 class="title-3">Refuel</h1>
+ 		<div class="hero--content">
+ 			<h1 class="title-1">Ride</h1>
+ 			<h1 class="title-2">Rumble</h1>
+ 			<h1 class="title-3">Refuel</h1>
+		</div>
  	</div>
 
 	<!-- Intro -->
@@ -110,16 +109,32 @@
     <!-- Photo Grid / Donation -->
     <div class="donation jumbotron jumbotron-fluid">
 		<div class="v-grid">
-			<div class="qrt-block one"></div>
-			<div class="half-block two"></div>
-			<div class="qrt-block three"></div>
+			<div class="qrt-block one">
+				<div class="donate-btn">
+					<a href="about.html" role="button" class="btn ctrl-standard fx-bubbleUp">About</a>
+				</div>
+			</div>
+			<div class="half-block two">
+				<div class="donate-btn">
+					<a href="#" role="button" class="btn ctrl-standard fx-bubbleUp">Class Schedule</a>
+				</div>
+			</div>
+			<div class="qrt-block three">
+				<div class="donate-btn">
+					<a href="athletes.html" role="button" class="btn ctrl-standard fx-bubbleUp">Athletes</a>
+				</div>
+			</div>
 		</div>
 
 		<div class="v-grid">
-			<div class="two-thirds-block four"></div>
+			<div class="two-thirds-block four">
+				<div class="donate-btn">
+					<a href="giving-back.html" role="button" class="btn ctrl-standard fx-bubbleUp">Giving back</a>
+				</div>
+			</div>
 			<div class="third-block five">
 				<div class="donate-btn">
-					<a href="#" role="button" class="btn btn-outline-primary">Giving Back</a>
+					<a href="refuel.html" role="button" class="btn ctrl-standard fx-bubbleUp">Refuel</a>
 				</div>
 			</div>
 		</div>
@@ -140,23 +155,26 @@
 		<h3>The Vortex Blog</h3>
 
 		<div class="container posts">
-			<div class="third-block">
+			<div href="#" class="third-block">
+				<a href="#" class="meta">Jan 20, 2018</a>
 				<img src="images/blog-img.png" alt="">
-				<h4>Lorem ipsum dolor sit amet consectetuer.</h4>
+				<a href="#"><h4>Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor fusce dapibus. </h4></a>
 				<p>Lorem ipsum dolor sit amet consectetuer.</p>
 				<a href="#" class="btn btn-link">Lorem Ipsum</a>
 			</div>
-
-			<div class="third-block">
-				<img src="images/blog-img.png" alt="">
-				<h4>Lorem ipsum dolor sit amet consectetuer.</h4>
+			
+			<div href="#" class="third-block">
+				<a href="#" class="meta">Jan 20, 2018</a>
+				<a href=""><img src="images/blog-img.png" alt=""></a>
+				<a href="#"><h4>Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor fusce dapibus. </h4></a>
 				<p>Lorem ipsum dolor sit amet consectetuer.</p>
 				<a href="#" class="btn btn-link">Lorem Ipsum</a>
 			</div>
-
-			<div class="third-block">
+			
+			<div href="#" class="third-block">
+				<a href="#" class="meta">Jan 20, 2018</a>
 				<img src="images/blog-img.png" alt="">
-				<h4>Lorem ipsum dolor sit amet consectetuer.</h4>
+				<a href="#"><h4>Nullam id dolor id nibh ultricies vehicula ut id elit. Curabitur blandit tempus porttitor fusce dapibus. </h4></a>
 				<p>Lorem ipsum dolor sit amet consectetuer.</p>
 				<a href="#" class="btn btn-link">Lorem Ipsum</a>
 			</div>
@@ -183,22 +201,23 @@
 		</div>
 
 		<div class="bottom-bar container-fluid">
+			<div class="mark-bg"></div>
 			<ul class="nav float-left d-flex">
 				<li class="nav-item active">
 					<a class="nav-link" href="faq.html">FAQ</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="referafriend.php">Refer a Friend</a>
+					<a class="nav-link" href="#">Refer a Friend</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="careers.html">careers</a>
+					<a class="nav-link" href="contact.html#careers">careers</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="contact.html">Contact</a>
 				</li>
 			</ul>
 
-			<p class="copyright float-right">© <a href="index.html" style="font-weight:400; color:#ef3340; text-transform: uppercase; text-decoration: none; ">Vortex</a> 2018, All rights reserved. <a href="privacy.html">Privacy</a> &amp; <a href="terms.html">Terms</a>. A <a href="solmarkcreative.com">SolMark Creative</a> website powered by <a href="#">zingFit</a></p>
+			<p class="copyright float-right">© <a href="index.html" style="font-weight:400; color:#ef3340; text-transform: uppercase; text-decoration: none; ">Vortex</a> 2018, All rights reserved. <a href="privacy.html">Privacy</a> &amp; <a href="terms.html">Terms</a>. A <a href="http://www.solmarkcreative.com" target="_blank">Solmark Creative</a> website powered by <a href="http://www.zingfit.com/" target="_blank">zingFit</a></p>
 		</div>
 	</footer>
     <!-- /.container -->
