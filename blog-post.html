@@ -7,33 +7,30 @@
     <meta name="author" content="">
     <link rel="icon" href="">
 
-    <title>Vortex Cycle | Buy</title>
-
-    <!-- Bootstrap core CSS -->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <title>Vortex Cycle | Single Post Template</title>
 
     <!-- ZingFit Required Bootstrap CSS Override: v2.3.1 -->
-    <link rel="stylesheet" href="netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css">
-
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	
     <!-- Brand Fonts -->
     <link rel="stylesheet" type="text/css" href="fonts/RM-Pro/web/vortex.css">
+    
     <link rel="stylesheet" type="text/css" href="fonts/Bank-Gothic/bankgothic.css">
 
-	<!-- Custom Stylesheet -->
+	<!-- Vortex Styles -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <style type="text/css"></style>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -88,28 +85,31 @@
 		</div>
     </nav>
 
+	<!-- Mobile Book Class Button -->
+	<a class="btn btn-primary mobile-cta-btn" href="#" role="button">Book a Class</a>
+	
  	<!-- Subheader -->
  	<div class="subheader terms">
- 		<h6 class="page-title">Terms &amp; Conditions</h6>
+ 		<h6 class="page-title">Blog</h6>
  	</div>
 
+    <div class="container post-feature">
+    	<div class="post-img two-thirds-block float-left"><img src="images/blog-img.png" alt=""></div>
+    	
+    	<div class="post-excerpt third-block float-right">
+    		<h3>This is the featured blog post</h3>
+    		<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+    		<a class="btn btn-link" href="#">Read more...</a>
+    	</div>
+    </div>
+    
+	<div class="post-content container">
 
+
+	</div>
 
     <!-- Footer -->
 	<footer>
-		<div class="subscribe container">
-			<h4>Never miss a beat. Enter email below to be in the know for all things Vortex.</h4>
-
-			<form>
-				<div class="form-group">
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-					<button type="submit" class="btn btn-primary">Subscribe</button>
-				</div>
-
-				<small class="no-spam">We promise not to spam. You’ll only receive important news and updates.</small>
-			</form>
-		</div>
-
 		<div class="bottom-bar container-fluid">
 			<div class="mark-bg"></div>
 			<ul class="nav float-left d-flex">
@@ -132,17 +132,18 @@
 	</footer>
     <!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
+	<!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
     <!-- ZingFit Required Bootstrap JS Override: v2.3.1 -->
-    <script src="netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>  
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-
+    <!-- Instagram Feed -->
+	<script src="js/ig.js" type="text/javascript"></script>
 </body>
 </html>
